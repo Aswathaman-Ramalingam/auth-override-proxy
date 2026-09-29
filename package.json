@@ -1,12 +1,14 @@
 {
   "name": "auth-override-proxy",
-  "module": "index.ts",
-  "type": "module",
   "private": true,
-  "devDependencies": {
-    "@types/bun": "latest"
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch index.ts",
+    "start": "bun index.ts",
+    "typecheck": "bunx tsc --noEmit"
   },
-  "peerDependencies": {
-    "typescript": "^5"
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.0.0"
   }
 }
